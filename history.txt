@@ -1,0 +1,1000 @@
+  998  mysql -uroot-p
+  999  mysql -uroot -p
+ 1000  mysql -uhive -p
+ 1001  mysql -uroot -p
+ 1002  mysql -uhive -p
+ 1003  cd ../hadoop-2.7.1/
+ 1004  sbin/stop-all.sh 
+ 1005  jps
+ 1006  exit
+ 1007  cd ../apache-hive-2.3.2-bin/
+ 1008  bin/hive
+ 1009  ls -l
+ 1010  cd ../sqoop-1.4.6/
+ 1011  ../apache-hive-2.3.2-bin/bin/hive
+ 1012  cd ../apache-hive-2.3.2-bin/
+ 1013  bin/hive
+ 1014  bin/hive --conf conf/hive-site.xml
+ 1015  bin/hive --hiveconf conf/hive-site.xml
+ 1016  jps
+ 1017  exit
+ 1018  cd /media/bdalab/bdalab/sw/hadoop-2.7.1/
+ 1019  sbin/start-dfs.sh 
+ 1020  sbin/start-yarn.sh 
+ 1021  jps
+ 1022  hadoop fs -rmdir /user/hive/warehouse/products
+ 1023  hadoop fs -rmdir -r /user/hive/warehouse/products
+ 1024  hadoop fs -rmdirr /user/hive/warehouse/products
+ 1025  hadoop fs -rmdir r /user/hive/warehouse/products
+ 1026  hadoop fs 
+ 1027  hadoop fs -rm -R /user/hive/warehouse/products
+ 1028  ls -l
+ 1029  hadoop fs -rm -R /user/hive/warehouse/productsexit
+ 1030  exit
+ 1031  pig -x local
+ 1032  jps
+ 1033  exit
+ 1034  sudo dhclient
+ 1035  cd /media/bdalab/bdalab/sw/hadoop-2.7.1/
+ 1036  sbin/start-dfs.sh 
+ 1037  sbin/start-yarn.sh 
+ 1038  jps
+ 1039  cat /media/bdalab/bdalab/sw/hadoop-2.7.1/logs/hadoop-bdalab-datanode-bdalab.log
+ 1040  jps
+ 1041  netstat nlp
+ 1042  netstat nlp | grep 50010
+ 1043  sbin/hadoop-daemon.sh stop datannode
+ 1044  sbin/hadoop-daemon.sh start datanode
+ 1045  jps
+ 1046  netstat nlp | grep :50010
+ 1047  netstat tnlp | grep :50010
+ 1048  netstat tupln | grep :50010
+ 1049  fuser 80/tcp
+ 1050  fuser 80
+ 1051  fuser 50010/tcp
+ 1052  kill -9 23
+ 1053  kill -9 2346
+ 1054  jps
+ 1055  sbin/hadoop-daemon.sh start datanode
+ 1056  jps
+ 1057  cat /media/bdalab/bdalab/sw/hadoop-2.7.1/logs/hadoop-bdalab-datanode-bdalab.log
+ 1058  fuser 50010/tcp
+ 1059  netstat tupln | grep :50010
+ 1060  exit
+ 1061  mysql -uhive -p
+ 1062  mysql -uroot -p
+ 1063  exit
+ 1064  pig -x local
+ 1065  exit
+ 1066  ls -l /home/bdalab/Desktop/kiot/day3/mrsampledata
+ 1067  ls -l /var/lib/mysql/
+ 1068  sudo ls -l /var/lib/mysql/
+ 1069  chown -R mysql:mysql /home/bdalab/Desktop/kiot/day3/mrsampledata/mysql-access
+ 1070  sudo chown -R mysql:mysql /home/bdalab/Desktop/kiot/day3/mrsampledata/mysql-access
+ 1071  ls -l /home/bdalab/Desktop/kiot/day3/mrsampledata/mysql-access
+ 1072  rm -rf /home/bdalab/Desktop/kiot/day3/mrsampledata/mysql-access
+ 1073  sudo rm -rf /home/bdalab/Desktop/kiot/day3/mrsampledata/mysql-access
+ 1074  cp /home/bdalab/Desktop/kiot/day3/mrsampledata/file1.csv /var/lib/mysql
+ 1075  sudo cp /home/bdalab/Desktop/kiot/day3/mrsampledata/file1.csv /var/lib/mysql
+ 1076  sudo ls -l /var/lib/mysql
+ 1077  sudo cp /home/bdalab/Desktop/kiot/day3/mf1.csv /var/lib/mysql
+ 1078  exit
+ 1079  cd ../apache-hive-2.3.2-bin/
+ 1080  bin/hive
+ 1081  schematool -dbType mysql -initSchema
+ 1082  cat conf/hive-site.xml
+ 1083  echo $HIVE_HOME 
+ 1084  sudo vim.tiny /etc/profile
+ 1085  source /etc/profile
+ 1086  echo $HIVE_HOME 
+ 1087  schematool -dbType mysql -initSchema
+ 1088  rm -rf metastore_db/
+ 1089  schematool -dbType mysql -initSchema
+ 1090  bin/hive
+ 1091  exit
+ 1092  cd \ /media/bdalab/bdalab/sw/hadoop-2.7.1/
+ 1093  cd  /media/bdalab/bdalab/sw/hadoop-2.7.1/
+ 1094  sbin/hadoop-daemon.sh start datanode
+ 1095  jps
+ 1096  cd ../sqoop-1.4.6/
+ 1097  bin/sqoop import --connect jdbc:mysql://localhost:3306/fordemo --table products  --hive-import --split-by productID --create-hive-table  --hive-table products1 -username root -P
+ 1098  hadoop fs -ls /
+ 1099  hadoop fs -ls /user
+ 1100  hadoop fs -ls /user/bdalab
+ 1101  hadoop fs -rm -R /user/bdalab
+ 1102  bin/sqoop import --connect jdbc:mysql://localhost:3306/fordemo --table products  --hive-import --split-by productID --create-hive-table  --hive-table products1 -username root -P
+ 1103  bin/sqoop import --connect jdbc:mysql://localhost:3306/fordemo --table products  --hive-import --split-by productID --create-hive-table  --hive-table products11 -username root -P
+ 1104  hadoop fs -rm -R /user/bdalab
+ 1105  bin/sqoop import --connect jdbc:mysql://localhost:3306/fordemo --table products  --hive-import --split-by productID --create-hive-table  --hive-table products11 -username root -P
+ 1106  echo $HIVE_HOME 
+ 1107  source /etc/profile
+ 1108  rm -rf /user/hive/warehouse/products
+ 1109  rm -rf /user/hive/warehouse/products1
+ 1110  rm -rf /user/hive/warehouse/products11
+ 1111  hadoop fs rm -rf /user/hive/warehouse/products11
+ 1112  hadoop fs -rm -R /user/hive/warehouse/products11
+ 1113  hadoop fs -rm -R /user/hive/warehouse/products1
+ 1114  hadoop fs -rm -R /user/bdalab
+ 1115  bin/sqoop import --connect jdbc:mysql://localhost:3306/fordemo --table products  --hive-import --split-by productID --create-hive-table  --hive-table products11 -username root -P
+ 1116  jps
+ 1117  ../hadoop-2.7.1/sbin/stop-dfs.sh 
+ 1118  jps
+ 1119  exit
+ 1120  vim.tiny mongodb_handson
+ 1121  exit
+ 1122  mongofiles -d gridfs list 32
+ 1123  mongofiles -d gridfs list 10
+ 1124  mongofiles -d gridfs list 1
+ 1125  mongoimport -d nic -c students -f name,age,place,dept --file /media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv 
+ 1126  mongoimport -d nic -c students -f "name,age,place,dept" --file /media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv 
+ 1127  mongoimport -d nic -c students -f "name,age,place,dept,empty" --file /media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv 
+ 1128  mongoimport -d nic -c students -f "name,age,place,dept,empty" --file /media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv --type csv
+ 1129  mongoimport -d nic -c students -f "name,age,place,dept" --file /media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv --type csv
+ 1130  exit
+ 1131  cat /media/bdalab/9F24-BF58/1cassandra/nhanes52_mongodb.csv
+ 1132  mongo
+ 1133  exit
+ 1134  mysql -hive -p
+ 1135  mysql -u hive -p
+ 1136  exit
+ 1137  du -f /
+ 1138  du -h /
+ 1139  df -h /
+ 1140  df -h 
+ 1141  df -h ~/Downloads/
+ 1142  fdisk -l
+ 1143  sudo fdisk -l
+ 1144  df -h 
+ 1145  ls -lh ~/Downloads/
+ 1146  ls -lhr ~/Downloads/
+ 1147  df -h 
+ 1148  mkdir /media/bdalab/bdalab/downloads_09012018
+ 1149  mv /home/bdalab/Downloads/ /media/bdalab/bdalab/downloads_09012018/
+ 1150  mkdir ~/Downloads
+ 1151  df -h /
+ 1152  df -h 
+ 1153  exit
+ 1154  mysql -u hive -p
+ 1155  mysql -uroot -p
+ 1156  exit
+ 1157  cd  /media/bdalab/bdalab/sw
+ 1158  java -jar metabase.jar 
+ 1159  exit
+ 1160  sudo ls-l/var/lib/mysql
+ 1161  sudo ls-l /var/lib/mysql
+ 1162  sudo ls-l/var/lib/mysql
+ 1163  sudo ls -l /var/lib/mysql
+ 1164  sudo ls -l /var/lib/mysql/dvac
+ 1165  sudo ls -l /var/lib/mysql
+ 1166  sudo ls -l /var/lib/mysql/dvac
+ 1167  sudo ls -l /var/lib/mysql
+ 1168  mysqldump --user root -p  dvac > dvac_020118.sql
+ 1169  ls - l
+ 1170  ls -l
+ 1171  pwd
+ 1172  mysql -uroot -p
+ 1173  exit
+ 1174  cd  /media/bdalab/bdalab/sw/rstudio-0.99.482/
+ 1175  bin/rstudio
+ 1176  exit
+ 1177  ping www.google.com
+ 1178  /etc/init.d/apache2 status
+ 1179  /etc/init.d/apache2 start
+ 1180  /etc/init.d/apache2 status
+ 1181  /etc/init.d/apache2 start
+ 1182  /etc/init.d/apache2 status
+ 1183  ls -l /var/www/html/
+ 1184  sudo chmod 777 -R  /var/www/
+ 1185  exit
+ 1186  mysql -uroot -p
+ 1187  exit
+ 1188  cd  /media/bdalab/bdalab/sw/rstudio-0.99.482/
+ 1189  bin/rstudio
+ 1190  exit
+ 1191  cd  /media/bdalab/bdalab/sw/rstudio-0.99.482/
+ 1192  bin/rstudio
+ 1193  exit
+ 1194  /etc/init.d/apache2 status
+ 1195  /etc/init.d/apache2 start
+ 1196  /etc/init.d/apache2 status
+ 1197  netstat -nltp
+ 1198  tail -f /var/log/apache2/access.log 
+ 1199  tail -f /var/log/apache2/error.log 
+ 1200  tail  /var/log/apache2/error.log 
+ 1201  ls -l /var/www/html/
+ 1202  /etc/init.d/apache2 restart
+ 1203  restorecon -v -R /var/www/html/
+ 1204  apt-get remove apache2
+ 1205  sudo apt-get remove apache2
+ 1206  /etc/init.d/apache2 restart
+ 1207  sudo apt-get install apache2
+ 1208  /etc/init.d/apache2 restart
+ 1209  ls -l /var/www/html/hce/
+ 1210  mongo
+ 1211  R
+ 1212  exit
+ 1213  vim.tiny rLinkedin
+ 1214  exit
+ 1215  cd  /media/bdalab/bdalab/sw/rstudio-0.99.482/
+ 1216  bin/rstudio
+ 1217  exit
+ 1218  sudo dhclient
+ 1219  uname -a
+ 1220  /etc/init.d/apache2 restart
+ 1221  lsb_release -a
+ 1222  vim.tiny /etc/apache2/conf-enabled/security
+ 1223  vim.tiny /etc/apache2/conf-enabled/security.conf 
+ 1224  sudo vim.tiny /etc/apache2/conf-enabled/security.conf 
+ 1225  /etc/init.d/apache2 restart
+ 1226  vim.tiny /var/log/nginx/error.log
+ 1227  vim.tiny /etc/nginx/sites-enabled/default 
+ 1228  sudo vim.tiny /etc/nginx/sites-enabled/default 
+ 1229  /etc/init.d/nginx restart
+ 1230  exit
+ 1231  sudo cp /home/bdalab/Downloads/xAPI-Edu-Data.csv /var/www/html/nittr/
+ 1232  ifconfig 
+ 1233  exit
+ 1234  sudo midir /var/lib/ht/nittr
+ 1235  sudo mkdir /var/lib/ht/nittr
+ 1236  sudo mkdir /var/www/html/nittr
+ 1237  exit
+ 1238  cd  /media/bdalab/bdalab/sw/rstudio-0.99.482/
+ 1239  bin/rstudio
+ 1240  exit
+ 1241  xit
+ 1242  exit
+ 1243  cd /media/bdalab/bdalab/sw/hadoop-2.7.1/etc/hadoop
+ 1244  gedit core-site.xml
+ 1245  gedit hdfs-site.xml 
+ 1246  pwd
+ 1247  jps
+ 1248  cd ../../
+ 1249  sbin/start-dfs.sh
+ 1250  jps
+ 1251  sbin/start-yarn.sh
+ 1252  jps
+ 1253  bin/hadoop fs -mkdir /klu
+ 1254  bin/hadoop fs -put /home/bdalab/Desktop/kiot/day2 /klu
+ 1255  bin/hadoop fs -rmdir /klu
+ 1256  bin/hadoop fs -rmdir -r /klu
+ 1257  bin/hadoop fs -rmdir -R /klu
+ 1258  bin/hadoop fs -rm -R /klu
+ 1259  bin/hadoop fs -mkdir /klu
+ 1260  bin/hadoop fs -put /hom
+ 1261  bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.8.0.jar wordcount /klu/  /klu/output
+ 1262  bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.1.jar wordcount /klu/  /klu/output
+ 1263  bin/hadoop fs -cat /klu/output/part-r-00000
+ 1264  sbin/stop-yarn.sh
+ 1265  sbin/stop-dfs.sh 
+ 1266  exit
+ 1267  echo $YARN_CONF_DIR
+ 1268  source /etc/profile
+ 1269  echo $YARN_CONF_DIR
+ 1270  echo $HADOOP_CONF_DIR 
+ 1271  exit
+ 1272  cd ~/Downloads/teamviewer/tv_bin/script/
+ 1273  ./teamviewer deamon start
+ 1274  pgrep teamviewerd 
+ 1275  kill -9 `pgrep teamviewerd `
+ 1276  cd /opt/teamviewer/tv_bin/script/
+ 1277  ./teamviewer deamon start
+ 1278  kill -9 `pgrep teamviewerd `
+ 1279  ./teamviewer deamon start
+ 1280  pgrep teamviewerd 
+ 1281  ps -aux
+ 1282  ps -aux | team
+ 1283  ps -aux | grep team
+ 1284  ps -aux | grep team*
+ 1285  ./teamviewer 
+ 1286  ps -aux | pgrep team*
+ 1287  cd /opt/teamviewer/tv_bin/script/exit
+ 1288  exit
+ 1289  ps -aux | pgrep team*
+ 1290  cd /opt/teamviewer/tv_bin/script/
+ 1291  ./teamviewer_setup 
+ 1292  ./teamviewer_setup install
+ 1293  sudo ./teamviewer_setup install
+ 1294  sudo apt-get install libdbus-1-3 libqt5gui5 libqt5widgets5 libqt5qml5 libqt5quick5 libqt5webkit5 libqt5x11extras5 qml-module-qtquick2 qml-module-qtquick-controls qml-module-qtquick-dialogs qml-module-qtquick-window2 qml-module-qtquick-layouts
+ 1295  ./teamviewerd.sysv 
+ 1296  ./teamviewerd.sysv status
+ 1297  ./teamviewerd.sysv start
+ 1298  sudo./teamviewerd.sysv start
+ 1299  sudo ./teamviewerd.sysv start
+ 1300  ./teamviewerd.sysv status
+ 1301  ./teamviewerd.sysv stop
+ 1302  sudo ./teamviewerd.sysv stop
+ 1303  sudo ./teamviewerd.sysv start
+ 1304  sudo ./teamviewerd.sysv status
+ 1305  teamviewer 
+ 1306  exit
+ 1307  mysql -uroot -p
+ 1308  exit
+ 1309  wget https://github.com/daisy0311/NYC-Crime-Analysis-Shiny-App.git
+ 1310  ls -l
+ 1311  rm -rf NYC-Crime-Analysis-Shiny-App.git 
+ 1312  mysql -uroot -p
+ 1313  exit
+ 1314  cd  /media/bdalab/bdalab/sw/rstudio-0.99.482/
+ 1315  bin/rstudio
+ 1316  exit
+ 1317  sudo ntfsfix /dev/sda6
+ 1318  cat /media/bdalab/docs/sample_data/cources-su/mrsampledata/file1.txt | grep more
+ 1319  cat /media/bdalab/docs/sample_data/cources-su/mrsampledata/file1.txt |more
+ 1320  vim.tiny mongodb_handson
+ 1321  history | grep _handson
+ 1322  history 
+ 1323  locate mongodb_handson
+ 1324  find mongodb_handson
+ 1325  find -f mongodb_handson /
+ 1326  find  mongodb_handson /
+ 1327  find  mongodb_handson /media/
+ 1328  find  /media/ mongodb_handson
+ 1329  mongofiles -d gridfs list 1
+ 1330  history 
+ 1331  history | grep mongoo
+ 1332  history | grep mongos
+ 1333  mongofiles -d gridfs list 1
+ 1334  mongofiles 
+ 1335  mongofiles -d gridfs 
+ 1336  mongofiles -d gridfs list 32
+ 1337  mongofiles -d gridfs
+ 1338  mongofiles -d gridfs get
+ 1339  mongo
+ 1340  exit
+ 1341  mongo
+ 1342  exit
+ 1343  mongoimport -d kiot -c training --type csv --file "/media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv" --fileds name,age,place,dept
+ 1344  mongoimport --db kiot -c training --type csv --file "/media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv" --fileds name,age,place,dept
+ 1345  mongoimport -d kiot -c training --file "/home/kiot/Downloads/mf1.csv" --type csv --fileds name,age,place,dept
+ 1346  mongoimport --db kiot -c training --file "/media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv" --type csv --fields name,age,place,dept
+ 1347  exit
+ 1348  vim.tiny kiot.r
+ 1349  exit
+ 1350  vim.tiny kiot.r
+ 1351  gedit kiot.r
+ 1352  exit
+ 1353  scala
+ 1354  scala -version
+ 1355  libapache2-mod-php5
+ 1356  sudo apt-get install libapache2-mod-php5
+ 1357  sudo apt-get install php5 libapache2-mod-php5
+ 1358  apt-get -f install
+ 1359  sudo apt-get -f install
+ 1360  php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
+ 1361  sudo apt-get install php5-cli
+ 1362  php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
+ 1363  locat httd
+ 1364  locate httd
+ 1365  locate httd.conf
+ 1366  sudo /etc/init.d/apache2 restart
+ 1367  sudo apt-get install libapache2-mod-php5
+ 1368  sudo /etc/init.d/apache2 restart
+ 1369  sudo apt-get install php5
+ 1370  sudo /etc/init.d/apache2 restart
+ 1371  sudo /etc/init.d/apache2 stop
+ 1372  sudo /etc/init.d/apache2 start
+ 1373  sudo /etc/init.d/apache2 status
+ 1374  exi
+ 1375  exit
+ 1376  vim.tiny ~/.bashrc
+ 1377  exit
+ 1378  php
+ 1379  sudo apt-get install php
+ 1380  sudo apt-cache search php
+ 1381  sudo apt-cache search php^
+ 1382  sudo apt-cache search ^php
+ 1383  exit
+ 1384  vim.tiny error_post
+ 1385  exit
+ 1386  cd  /media/bdalab/bdalab/sw/rstudio-0.99.482/
+ 1387  bin/rstudio
+ 1388  mv /media/bdalab/bdalab/sw/rstudio-0.99.482/.RData /media/bdalab/bdalab/sw/rstudio-0.99.482/.RData_OLD20022018
+ 1389  bin/rstudio
+ 1390  mv /media/bdalab/bdalab/sw/rstudio-0.99.482/.RData_OLD20022018 /media/bdalab/bdalab/sw/rstudio-0.99.482/.OLD_RData_20022018 
+ 1391  bin/rstudio
+ 1392  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1393  bin/rstudio
+ 1394  exit
+ 1395  reference
+ 1396  vim.tiny reference
+ 1397  cd
+ 1398  ls /usr/lib64/R/library/methods/libs/methods.so
+ 1399  sudo ls /usr/lib64/R/library/methods/libs/methods.so
+ 1400  sudo ls /usr/lib/R/library/methods/libs/methods.so 
+ 1401  sudo apt-cache search libssh2
+ 1402  sudo dpkg -l  libssh2
+ 1403  sudo apt-get install libssh2
+ 1404  sudo apt-cache search libssh2-
+ 1405  sudo apt-get install libssh2-1
+ 1406  apt-get autoremove
+ 1407  sudo apt-get autoremove
+ 1408  ls -l /home/bdalab/R/x86_64-pc-linux-gnu-library/3.2/Cairo/libs/Cairo.so
+ 1409  sudo apt-get install libcairo2-dev
+ 1410  sudo apt-get install libxt-dev
+ 1411  exit
+ 1412  vim.tiny testphp.php
+ 1413  php
+ 1414  php5
+ 1415  exit
+ 1416  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1417  bin/rstudio
+ 1418  exit
+ 1419  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1420  bin/rstudio
+ 1421  exit
+ 1422  pgrep -lf office
+ 1423  pgrep -lf soffice
+ 1424  kill -9 `pgrep -lf soffice`
+ 1425  free -m
+ 1426  exit
+ 1427  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1428  bin/rstudio
+ 1429  exit
+ 1430  sudo service network-manager status
+ 1431  sudo service network-manager restart
+ 1432  sudo service network-manager status
+ 1433  /etc/init.d/networking sttaus
+ 1434  /etc/init.d/networking status
+ 1435  sudo dhclient
+ 1436  /etc/init.d/networking status
+ 1437  dhclient
+ 1438  sudo dhclient
+ 1439  rfkill 
+ 1440  rfkill unblock all 
+ 1441  sudo dhclient
+ 1442  ping www.google.com
+ 1443  exit
+ 1444  sudo dhclient
+ 1445  exit
+ 1446  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1447  bin/rstudio
+ 1448  exit
+ 1449  mongo
+ 1450  exit
+ 1451  mongoimport --db rmd -c training --file "/media/bdalab/docs/sample_data/hive/survey/surveytbl/mf1.csv" --type csv --fields name,age,place,dept
+ 1452  exit
+ 1453  sudo apt-cache search mongodb
+ 1454  exit
+ 1455  reference
+ 1456  vim.tiny referen
+ 1457  node -v
+ 1458  npm -v
+ 1459  nodejs -v
+ 1460  cd node_RiskMap/
+ 1461  node app.js 
+ 1462  nodejs app.js 
+ 1463  exit
+ 1464  sudo dhclient
+ 1465  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1466  bin/rstudio
+ 1467  mysql -uroot -p
+ 1468  sudo dhclient
+ 1469  teamviewer 
+ 1470  exit
+ 1471  find --name riskmap.r
+ 1472  find -name riskmap.r
+ 1473  find / -name riskmap.r
+ 1474  exit
+ 1475  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1476  bin/rstudio
+ 1477  exit
+ 1478  teamviewer 
+ 1479  exit
+ 1480  dhclient
+ 1481  sudo dhclient
+ 1482  exit
+ 1483  teamviewer 
+ 1484  CCX
+ 1485  teamviewer 
+ 1486  pgrep teamviewerd 
+ 1487  kill -9 `pgrep teamviewerd `
+ 1488  sudo kill -9 `pgrep teamviewerd`
+ 1489  pgrep  teamviewer
+ 1490  sudo kill -9 `pgrep teamviewer`
+ 1491  pgrep  teamviewer
+ 1492  kill -9 3928
+ 1493  sudo kill -9 3928
+ 1494  pgrep  teamviewer
+ 1495  sudo kill -9 3957
+ 1496  pgrep  teamviewer
+ 1497  sudo kill -9 3987
+ 1498  pgrep  teamviewer
+ 1499  sudo kill -9 016
+ 1500  sudo kill -9 4016
+ 1501  exit
+ 1502  ecit
+ 1503  exit
+ 1504  sudo dhclient
+ 1505  exit
+ 1506  teamviewer 
+ 1507  pgrep teamviewer
+ 1508  exit
+ 1509  teamviewer 
+ 1510  pgrep teamviewerd 
+ 1511  pgrep teamviewer
+ 1512  kill -9 `pgrep teamviewer`
+ 1513  sudo kill -9 `pgrep teamviewer`
+ 1514  pgrep teamviewer
+ 1515  sudo kill -9 `pgrep teamviewer`
+ 1516  teamviewer 
+ 1517  exit
+ 1518  sudo dhclient
+ 1519  exit
+ 1520  teamviewer 
+ 1521  exit
+ 1522  sudo dhclient
+ 1523  teamviewer 
+ 1524  exit
+ 1525  vim.tiny db_alone
+ 1526  exit
+ 1527  sudo pip install pyyaml
+ 1528  pip install --upgrade setuptools pip
+ 1529  sudo pip install pyyaml
+ 1530  sudo dhclientpython -c 'import keras; print(keras.__version__)'
+ 1531  python -c 'import keras; print(keras.__version__)'
+ 1532  pip install scipy
+ 1533  exit
+ 1534  pip install np_utils
+ 1535  exit
+ 1536  sudo dhclient
+ 1537  sudo pip install keras
+ 1538  apt-get -y install python-pip
+ 1539  sudo apt-get -y install python-pip
+ 1540  sudo pip install keras
+ 1541  sudo apt-get install python-numpy
+ 1542  sudo pip install keras
+ 1543  python
+ 1544  sudo apt-get install python-dev
+ 1545  export LC_ALL=C
+ 1546  pip install --upgrade setuptools
+ 1547  export LC_ALL=C
+ 1548  sudo pip install keras
+ 1549  python
+ 1550  sudo pip install keras
+ 1551  pip install tensorflow 
+ 1552  python
+ 1553  sudo apt-get install python-pip python-dev
+ 1554  pip install tensorflow 
+ 1555  pip install --upgrade pip
+ 1556  pip install tensorflow 
+ 1557  pip install tensorflow
+ 1558  export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp27-none-linux_x86_64.whl
+ 1559  python
+ 1560  sudo pip install keras
+ 1561  sudo pip install --upgrade
+ 1562  $ curl -sSL https://github.com/fchollet/keras/raw/master/examples/mnist_mlp.py | python
+ 1563  python -c 'import keras; print(keras.__version__)'
+ 1564  python
+ 1565  python -c 'import keras; print(keras.__version__)'
+ 1566  sudo dhclient
+ 1567   ~/.keras/ker
+ 1568  chmod 777 -R ~/.keras/
+ 1569  ~/.keras/keras.json 
+ 1570  cat ~/.keras/keras.json 
+ 1571  workon
+ 1572  python -c 'import keras; print(keras.__version__)'
+ 1573  python -c 'import tensorflow as tf; print(tf.__version__)'
+ 1574  pip install tensorboard
+ 1575  cd /media/bdalab/docs/part_time/competition/crowdAnalyticX/superman_image/data/train
+ 1576  find . -maxdepth 1 -type f | wc -l
+ 1577  find . -maxdepth 0 -type f | wc -l
+ 1578  find . -maxdepth 2 -type f | wc -l
+ 1579  cd ../validation/
+ 1580  find . -maxdepth 2 -type f | wc -l
+ 1581  cd ../../
+ 1582  cd little_data/
+ 1583  python classifier_from_little_data_script_1.py 
+ 1584  pip install -U tensorflow
+ 1585  activate tensorflow
+ 1586  ls -l ~/.keras/keras.json classifier_from_little_data_script_1.py
+ 1587  ls -l
+ 1588  python -c 'import tensorflow as tf; print(tf.__version__)'
+ 1589  sudo pip3 install --upgrade  https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.6.0-cp34-cp34m-linux_x86_64.whl
+ 1590  sudo pip install --upgrade  https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.6.0-cp34-cp34m-linux_x86_64.whl
+ 1591  sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.6.0-cp27-none-linux_x86_64.whl
+ 1592  python -c 'import tensorflow as tf; print(tf.__version__)'
+ 1593  python classifier_from_little_data_script_1.py 
+ 1594  python -c 'import tensorflow as tf; print(tf.__version__)'
+ 1595  python -c "print sys.path"
+ 1596  python -v -c "import tensorflow"
+ 1597  python -c "print sys.path"
+ 1598  sudo pip show tensorflow
+ 1599  sudo pip uninstall tensorflow
+ 1600  python -v -c "import tensorflow"
+ 1601  python -c 'import tensorflow as tf; print(tf.__version__)'
+ 1602  python classifier_from_little_data_script_1.py 
+ 1603  pip install Pillow
+ 1604  python classifier_from_little_data_script_1.py 
+ 1605  pip install h5py
+ 1606  python classifier_from_little_data_script_1.py 
+ 1607  sudo apt-get install libhdf5
+ 1608  sudo apt-get install libhdf5-dev 
+ 1609  python classifier_from_little_data_script_1.py 
+ 1610  sudo pip install cython
+ 1611  python classifier_from_little_data_script_1.py 
+ 1612  from importlib import reload
+ 1613  reload(keras.models)
+ 1614  python
+ 1615  python classifier_from_little_data_script_1.py 
+ 1616  python
+ 1617  python classifier_from_little_data_script_1.py 
+ 1618  exit
+ 1619  cd
+ 1620  find . -type f | grep activate
+ 1621  ls -l ~/
+ 1622  pip install tensorflow
+ 1623  ls -l  ~/
+ 1624  exit
+ 1625  teamviewer 
+ 1626  exit
+ 1627  teamviewer 
+ 1628  exit
+ 1629  cd /media/bdalab/docs/part_time/competition/crowdAnalyticX/superman_image/Tensorflow-image-recognition-master/
+ 1630  cd ..
+ 1631  cd little_data/
+ 1632  python classifier_from_little_data_script_1.py 
+ 1633  cython
+ 1634  sudo apt-get install libhdf5-dev
+ 1635  sudo pip install h5py
+ 1636  sudo apt-get install python-h5py
+ 1637  python classifier_from_little_data_script_1.py 
+ 1638  python predict.py 
+ 1639  ls -l /media/bdalab/docs/part_time/competition/crowdAnalyticX/superman_image/CAX_Superhero_Test/CAX_Superhero_Test/superhero_test_1.jpg
+ 1640  python predict.py 
+ 1641  python classifier_from_little_data_script_1.py 
+ 1642  python predict.py 
+ 1643  cat ~/.keras/keras.json 
+ 1644  vim.tiny ~/.keras/keras.json 
+ 1645  python predict.py 
+ 1646  vim.tiny ~/.keras/keras.json 
+ 1647  python predict.py 
+ 1648  vim.tiny ~/.keras/keras.json 
+ 1649  df -f
+ 1650  df -h
+ 1651  df -hl
+ 1652  python classifier_from_little_data_script_1.py 
+ 1653  python predict.py 
+ 1654  vim.tiny ~/.keras/keras.json 
+ 1655  python classifier_from_little_data_script_1.py 
+ 1656  exit
+ 1657  find . -type f | wc -l
+ 1658  cd /media/bdalab/docs/part_time/competition/crowdAnalyticX/superman_image/CAX_Superhero_Train_augument_1L
+ 1659  find . -maxdepth 2 -type f | wc -l
+ 1660  cd /media/bdalab/docs/part_time/competition/crowdAnalyticX/superman_image/CAX_Superhero_Train_augument
+ 1661  find . -maxdepth 2 -type f | wc -l
+ 1662  cd ../../data
+ 1663  cd train/
+ 1664  find . -maxdepth 2 -type f | wc -l
+ 1665  cd ../validate/
+ 1666  find . -maxdepth 2 -type f | wc -l
+ 1667  exit
+ 1668  sudo dhclient
+ 1669  teamviewer 
+ 1670  cd ../validate/
+ 1671  cd /media/bdalab/docs/part_time/competition/crowdAnalyticX/superman_image/CAX_Superhero_Train_augument
+ 1672  cd /media/bdalab/docs/part_time/competition/crowdAnalyticX/superman_image/
+ 1673  sudo dhclient
+ 1674  pgrep firefox 
+ 1675  hill -9 `pgrep firefox `
+ 1676  hill -9 `pgrep firefox`
+ 1677  kill -9 `pgrep firefox`
+ 1678  exit
+ 1679  sudo dhclient
+ 1680  kill -9 `pgrep firefox`
+ 1681  pgrep firefox
+ 1682  firefox &
+ 1683  exit
+ 1684  sudo service network-manager restart
+ 1685  vim.tiny 
+ 1686  it
+ 1687  exit
+ 1688  reference
+ 1689  vim.tiny reference
+ 1690  exit
+ 1691  vim.tiny help
+ 1692  ls -l
+ 1693  cd /media/bdalab/bdalab/sw/rstudio-1.1.423
+ 1694  /media/bdalab/bdalab/sw/rstudio-1.1.423/bin/rstudio
+ 1695  exit
+ 1696  sudo dhclient
+ 1697  sudo service network-manager restart
+ 1698  ifconfig 
+ 1699  sudo dhclient
+ 1700  ping www.google.com
+ 1701  /etc/init.d/networking status
+ 1702  /etc/init.d/networking stop
+ 1703  /etc/init.d/networking status
+ 1704  /etc/init.d/networking start
+ 1705  ifconfig 
+ 1706  exit
+ 1707  vim.tiny datase_path
+ 1708  exit
+ 1709  sudo dhclient
+ 1710  exit
+ 1711  cd /media/bdalab/bdalab/sw/rstudio-1.1.423/
+ 1712  bin/rstudio
+ 1713  exit
+ 1714  vim.tiny notes
+ 1715  exit
+ 1716  gedit references
+ 1717  exit
+ 1718  Data
+ 1719  Variable
+ 1720  Description
+ 1721  Loan_ID
+ 1722  Unique Loan ID
+ 1723  Gender
+ 1724  Male/ Female
+ 1725  Married
+ 1726  Applicant married (Y/N)
+ 1727  Dependents
+ 1728  Number of dependents
+ 1729  Education
+ 1730  Applicant Education (Graduate/ Under Graduate)
+ 1731  Self_Employed
+ 1732  Self employed (Y/N)
+ 1733  ApplicantIncome
+ 1734  Applicant income
+ 1735  CoapplicantIncome
+ 1736  Coapplicant income
+ 1737  LoanAmount
+ 1738  Loan amount in thousands
+ 1739  Loan_Amount_Term
+ 1740  Term of loan in months
+ 1741  Credit_History
+ 1742  credit history meets guidelines
+ 1743  Property_Area
+ 1744  Urban/ Semi Urban/ Rural
+ 1745  Loan_Status
+ 1746  cd /media/bdalab/bdalab/sw/rstudio-1.1.423/
+ 1747  bin/rstudio
+ 1748  exit
+ 1749  sudo dhclient
+ 1750  cd /media/bdalab/bdalab/sw/rstudio-1.1.423/
+ 1751  bin/rstudio
+ 1752  exit
+ 1753  pgrep firefox
+ 1754  exit
+ 1755  sudo dhclient
+ 1756  cd /media/bdalab/bdalab/sw/rstudio-1.1.423/
+ 1757  bin/rstudio
+ 1758  exit
+ 1759  python
+ 1760  python3
+ 1761  pip install nltk
+ 1762  cd Dpwnloads
+ 1763  cd Downloads
+ 1764  cd BossBot
+ 1765  python3 Main.py
+ 1766  pip install nltk
+ 1767  python3 Main.py
+ 1768  sudo pip install -U nltk
+ 1769  python3 pip install nltk
+ 1770  python Main.py
+ 1771  pip install tflearn
+ 1772  pip install tflearn
+ 1773  sudo pip install tflearn
+ 1774  python3 Main.py
+ 1775  sudo pip install nltk
+ 1776  python3 Main.py
+ 1777  python Main.py
+ 1778  python3
+ 1779  python
+ 1780  pip install pymongo
+ 1781  pip3 install pymongo
+ 1782  sudo apt-get install python3-pip
+ 1783  python
+ 1784  sudo apt-get install python3-pip
+ 1785  sudo pip3 install tflearn
+ 1786  pip3 install nltk
+ 1787  pip3 install pymongo
+ 1788  cd Downloads
+ 1789  cd BossBot
+ 1790  python2 Main.py
+ 1791  python3 Main.py
+ 1792  pip3 install tensorflow
+ 1793  sudo pip3 install tensorflow
+ 1794  clear
+ 1795  python3
+ 1796  pip3 install tensorflow
+ 1797  sudo pip3 install tensorflow
+ 1798  pip3 install --upgrade
+ 1799  pip3 install --upgrade tensorflow
+ 1800  pip3 install --upgrade tensorflow-gpu
+ 1801  pip3 install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0rc0-cp27-none-linux_x86_64.whl
+ 1802  pip3 --version
+ 1803  pip3 install tensorflow
+ 1804  clear
+ 1805  pip --version
+ 1806  clea
+ 1807  clear
+ 1808  pip3 install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
+ 1809  sudo pip3 install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
+ 1810  clear
+ 1811  python --version
+ 1812  python3 --version
+ 1813  python3 upgrade
+ 1814  sudo apt-get install python 3.5.2
+ 1815  sudo apt-get upgrade
+ 1816  python3 --version
+ 1817  sudo apt-get install python 3.5.2
+ 1818  python3 --version
+ 1819  sudo uninstall python3
+ 1820  sudo apt-get install python3.5
+ 1821  python3 install python 3.4.3
+ 1822  clear
+ 1823  python -versiob
+ 1824  python -version
+ 1825  python --version
+ 1826  python3 --version
+ 1827  clear
+ 1828  python3
+ 1829  python
+ 1830  cd Downloads
+ 1831  cd BossBot
+ 1832  python3 Bot.py
+ 1833  pip3 install tensorflow
+ 1834  pip install --upgrade pip
+ 1835  pip3 install --upgrade pip3
+ 1836  pip3 install --upgrade pip
+ 1837  pip3 install tensorflow
+ 1838  clear
+ 1839  pip3 install --upgrade
+ 1840  pip3 install --upgrade pip3
+ 1841  sudo -H pip3 install --upgrade pip
+ 1842  pip3 install tensorflow
+ 1843  sudo -H pip2 install --upgrade pip
+ 1844  clear
+ 1845  pip3 install tensorflow
+ 1846  pip3 install --upgrade setuptools pip
+ 1847  pip3 install tensorflo
+ 1848  sudo apt-get install python3-pip python3-dev
+ 1849  pip3 install tensorflow
+ 1850  sudo pip3 install --upgrade 
+ 1851  sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp34-cp34m-linux_x86_64.whl
+ 1852  clear
+ 1853  sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp34-cp34m-linux_x86_64.whl
+ 1854  python3 Main.py
+ 1855  python3
+ 1856  clear
+ 1857  python3 TelServer.py
+ 1858  pip3 install telepot
+ 1859  python3 TelServer.py
+ 1860  clear
+ 1861  python3 TelServer.py
+ 1862  clear
+ 1863  python3 TelServer.py
+ 1864  clear
+ 1865  python3 TelServer.py
+ 1866  clear
+ 1867  python3 TelServer.py
+ 1868  clear
+ 1869  python3 Main.py
+ 1870  pip3 nltk.download('punkt')
+ 1871  python3 nltk.download('punkt')
+ 1872  nltk.download('punkt')
+ 1873  python3
+ 1874  python3 TelServer.py
+ 1875  python3 Main.py
+ 1876  python3 TelServer.py
+ 1877  clear
+ 1878  python3 Main.py
+ 1879  python3 TelServer.py
+ 1880  uname -a
+ 1881  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+ 1882  uname -a
+ 1883  mongo
+ 1884  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+ 1885  sudo apt-get install -y mongodb-org
+ 1886  mongo
+ 1887  uname -a
+ 1888  clear
+ 1889  mongo --version
+ 1890  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username admin --password pass
+ 1891  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username user --password pass
+ 1892  clear
+ 1893  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username admin --password pass
+ 1894  mongo -u admin -p pass /db 
+ 1895  mongo -u admin -p pass hostIP:po
+ 1896  clear
+ 1897  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username admin --password pass
+ 1898  clear
+ 1899  mongo mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017
+ 1900  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username admin --password <PASSWORD>
+ 1901  mongo
+ 1902  clear
+ 1903  mongo
+ 1904  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username admin --password <PASSWORD>
+ 1905  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+ 1906  echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.6 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+ 1907  sudo apt-get update
+ 1908  clear
+ 1909  sudo apt-get install -y mongodb-org
+ 1910  sudo service mongod start
+ 1911  sudo apt-get install -y mongodb-org=3.6.4 mongodb-org-server=3.6.4 mongodb-org-shell=3.6.4 mongodb-org-mongos=3.6.4 mongodb-org-tools=3.6.4
+ 1912  clear
+ 1913  mongo
+ 1914  clear
+ 1915  mongo
+ 1916  clear
+ 1917  mongo
+ 1918  clear
+ 1919  mongo
+ 1920  clear
+ 1921  mongo
+ 1922  clear
+ 1923  mongo
+ 1924  vim.tiny README.txt 
+ 1925  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username admin --password pass
+ 1926  ifconfig 
+ 1927  mongo -h localhost
+ 1928  mongo -hlocalhost
+ 1929  mongo -h localhost:27017 -u
+ 1930  mongo localhost:27017
+ 1931  /etc/init.d/mongodb status 
+ 1932  sudo /etc/init.d/mongodb status 
+ 1933  mongo
+ 1934  /etc/init.d/mongodb start
+ 1935  mongo
+ 1936  exit
+ 1937  mongo "mongodb://bossdb-shard-00-00-w54dc.mongodb.net:27017,bossdb-shard-00-01-w54dc.mongodb.net:27017,bossdb-shard-00-02-w54dc.mongodb.net:27017/test?replicaSet=BOSSDB-shard-0" --ssl --authenticationDatabase admin --username admin --password pass
+ 1938  mongo
+ 1939  /etc/init.d/mongod
+ 1940  /etc/init.d/mongod status 
+ 1941  /etc/init.d/mongod start
+ 1942  cat /etc/mongod.conf 
+ 1943  ls -l /var/lib/mongodb
+ 1944  udo chown id -u /var/lib/mongodb
+ 1945  sudo chown id -u /var/lib/mongodb
+ 1946  rm -rf  /var/lib/mongodb/mongod.lock 
+ 1947  sudo rm -rf  /var/lib/mongodb/mongod.lock 
+ 1948  /etc/init.d/mongod start
+ 1949  sudo apt-get install mongodb-org
+ 1950  mongo
+ 1951  ping 192.168.43.154
+ 1952  ifocn
+ 1953  ifconfig
+ 1954  ping 192.168.43.154
+ 1955  ping 192.168.43.137
+ 1956  ping 192.168.43.154
+ 1957  mongo
+ 1958  /etc/init.d/mongod start
+ 1959  journalctl -xe
+ 1960  sudo chown -R mongodb /var/lib/mongodb
+ 1961  ls -l  /var/lib/mongodb
+ 1962  tail -f  /var/log/mongodb/mongod.log 
+ 1963  vim.tiny /var/log/mongodb/mongod.log 
+ 1964  ls -l /tmp/mongodb-27017.sock
+ 1965  sudo apt-get install --reinstall mongodb
+ 1966  mongo
+ 1967  /etc/init.d/mongodb status
+ 1968  /etc/init.d/mongodb start
+ 1969  /etc/init.d/mongodb status
+ 1970  /etc/init.d/mongod status 
+ 1971  /etc/init.d/mongodb stop
+ 1972  /etc/init.d/mongodb start
+ 1973  mongo
+ 1974  vim.tiny /var/l
+ 1975  /etc/init.d/mongod status 
+ 1976  /etc/init.d/mongodb status 
+ 1977  rm -rf /var/lib/mongodb/mongod.lock
+ 1978  sudo rm -rf /var/lib/mongodb/mongod.lock
+ 1979  systemctl start mongodb.service
+ 1980  /etc/init.d/mongodb status 
+ 1981  /etc/init.d/mongod status 
+ 1982  sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
+ 1983  sudo systemctl status mongodb
+ 1984  exit
+ 1985  dpkg -i /media/bdalab/bdalab/sw/mongodb-compass-community_1.13.1_amd64.deb 
+ 1986  sudo dpkg -i /media/bdalab/bdalab/sw/mongodb-compass-community_1.13.1_amd64.deb 
+ 1987  ping bossdb-w54dc.mongodb.net
+ 1988  python3 SocketServer.py 
+ 1989  exit
+ 1990  vim.tiny README.txt
+ 1991  history 
+ 1992  history | grep Main.py
+ 1993  python3 TelServer.py
+ 1994  exit
+ 1995  init 6
+ 1996  history 
+ 1997  history > history.txt

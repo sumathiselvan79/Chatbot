@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/bdalab/Downloads/BossBot_test/data/model/model.tflearn"
+all_model_checkpoint_paths: "/home/bdalab/Downloads/BossBot_test/data/model/model.tflearn"

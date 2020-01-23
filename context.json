@@ -1,0 +1,399 @@
+{
+  "contexts": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "/start",
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Yo",
+        "What's up",
+        "How ya doing?",
+        "How are you doing?",
+        "Whaddup?",
+        "hey"
+      ],
+      "responses": [
+        "Hello, what can I help you with?",
+        "Hi there, how can I help?",
+        "Hey! Anything I can help with?"
+        ]
+    },
+    {
+      "tag": "self",
+      "patterns": [
+        "Who are you?",
+        "What's your name?",
+        "What do you do?",
+        "What is your purpose?",
+        "What are you?",
+        "Your name?",
+        "What can you do?",
+        "are you real",
+        "are you human?"
+      ],
+      "responses": [
+        "I am the BOSSBOT. I am here to give you details on the product BOSS"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Chao"
+      ],
+      "responses": [
+        "See you later!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Bless",
+        "Peace"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "BOSS",
+      "patterns": [
+        "boss",
+        "What is Boss?",
+        "what boss"
+      ],
+      "responses": [
+        "BOSS is Bharat Operating System Solutions. An Indian GNU/Linux distribution customized for Indian environment"
+      ]
+    },
+    {
+      "tag": "os",
+      "patterns": [
+        "OS",
+        "os",
+        "what is operating system?",
+        "what is os?",
+        "Operating Systems"
+      ],
+      "responses": [
+        "Software that coordinates between the hardware and other parts of the computer to run other software is called an operating system, or the OS."
+      ]
+    },
+    {
+      "tag": "variantsBOSS",
+      "patterns": [
+        "What are the variants of BOSS?",
+        "variants of boss",
+        "boss variants"
+      ],
+      "responses": [
+        "BOSS is available as Desktop version, server edition and educational versions."
+      ]
+    },
+    {
+      "tag": "desktopandeducational",
+      "patterns": [
+        "What is the difference between desktop and educational versions?",
+        "difference between the versions",
+        "boss variants",
+        "desktop and educational versions"
+      ],
+      "responses": [
+        "BOSS is available as Desktop version, server edition and educational versions."
+      ]
+    },
+    {
+      "tag": "eduboss",
+      "patterns": [
+        "What is eduboss?",
+        "tell me about eduboss"
+      ],
+      "responses": [
+        "An educational variant of BOSS GNU/Linux focusing Indian schools."
+      ]
+    },
+    {
+      "tag": "latestBOSS",
+      "patterns": [
+        "What is the latest version of BOSS?",
+        "latest version boss",
+        "boss latest version",
+        "letest version of boss"
+      ],
+      "responses": [
+        "Desktop version 6.0"
+      ]
+    },
+    {
+      "tag": "latesteduboss",
+      "patterns": [
+        "What is the latest version of EduBOSS?",
+        "latest version eduboss",
+        "eduboss latest version",
+        "eduboss version"
+      ],
+      "responses": [
+        "4.1"
+      ]
+    },
+    {
+      "tag": "cost",
+      "patterns": [
+        "How much is the cost for BOSS OS?",
+        "cost of boss",
+        "boss cost"
+      ],
+      "responses": [
+        "It's free of cost!"
+      ]
+    },
+    {
+      "tag": "get",
+      "patterns": [
+        "How to get BOSS Linux?",
+        "can i get boss linux?",
+        "get boss linux"
+      ],
+      "responses": [
+        "Download from https://bosslinux.in/downloads or sent a request mail to bosslinux@cdac.in mentioning your complete postal address."
+      ]
+    },
+    {
+      "tag": "download",
+      "patterns": [
+        "How to download BOSS Linux?",
+        "boss download",
+        "download boss linux"
+      ],
+      "responses": [
+        "Download from https://bosslinux.in/downloads or sent a request mail to bosslinux@cdac.in mentioning your complete postal address."
+      ]
+    },
+    {
+      "tag": "cd",
+      "patterns": [
+        "I want a cd of boss linux with newer version , how can i get it?",
+        "cd boss linux",
+        "cd boss",
+        "boss cd",
+        "cd of boss linux"
+      ],
+      "responses": [
+        "Download from https://bosslinux.in/downloads or sent a request mail to bosslinux@cdac.in mentioning your complete postal address."
+      ]
+    },
+    {
+      "tag": "free",
+      "patterns": [
+        "I would like to get a free copy/CD/DVD of BOSS 6 Anoop 64-bit?",
+        "boss 6 anoop 64-bit",
+        "free boss 64-bit",
+        "free cd of boss 6 ANoop 64-bit"
+      ],
+      "responses": [
+        "Sent a request mail to bosslinux@cdac.in mentioning your complete postal address."
+      ]
+    },
+    {
+      "tag": "IP",
+      "patterns": [
+        "How to find the IP address?",
+        "ip address",
+        "find ip address",
+        "find ip",
+        "IP address"
+      ],
+      "responses": [
+        "use the command \"sudo ifconfig\""
+      ]
+    },
+    {
+      "tag": "developed",
+      "patterns": [
+        "Who developed BOSS linux?",
+        "who made boss linux",
+        "who made boss?"
+      ],
+      "responses": [
+        "BOSS Linux was developed by CDAC, Chennai."
+      ]
+    },
+    {
+      "tag": "debian",
+      "patterns": [
+        "Is BOSS a debian based linux?",
+        "what type of linux is boss?",
+        "boss type",
+        "boss inux type",
+        "type boss linux",
+        "debian based linux"
+      ],
+      "responses": [
+        "BOSS is a debian based linux."
+      ]
+    },
+    {
+      "tag": "redhat",
+      "patterns": [
+        "Is BOSS a redhat based linux?",
+        "what type of linux is boss?",
+        "boss type",
+        "boss inux type",
+        "type boss linux",
+        "redhat based linux"
+      ],
+      "responses": [
+        "BOSS is a debian based linux."
+      ]
+    },
+    {
+      "tag": "windows",
+      "patterns": [
+        "Does BOSS Linux support windows?",
+        "windows support",
+        "does it support windows",
+        "support windows"
+      ],
+      "responses": [
+        "No.  Both are two different operating systems.","Both are two different os. Thus, BOSS does not support Windows"
+      ]
+    },
+    {
+      "tag": "Office",
+      "patterns": [
+        "Does Microsoft Office run in BOSS Linux?",
+        "office in boss",
+        "microsoft office in windows",
+        "microsoft office run boss"
+      ],
+      "responses": [
+        "No.  But, there are many FOSS equivalent for Microsoft Office suite like LibreOffice, Abi Word etc., are available in BOSS linux."
+      ]
+    },
+    {
+      "tag": "requirements",
+      "patterns": [
+        "What are the minimum requirements for installing BOSS?",
+        "requirements of installing boss",
+        "requirement",
+        "install requirement"
+      ],
+      "responses": [
+        "To install BOSS , you need to have a minimum of 10.0 GB of hard disk space, 512 MB of RAM and a DVD­ ROM drive."
+      ]
+    },
+    {
+      "tag": "email",
+      "patterns": [
+        "Is there any email id for sending BOSS queries?",
+        "How to email boss",
+        "boss doubts",
+        "install requirement"
+      ],
+      "responses": [
+        "Yes. Send your queries to bosslinux@cdac.in","Send your doubts/queries to bosslinux@cdac.in"
+      ]
+    },
+    {
+      "tag": "difference",
+      "patterns": [
+        "What is the difference between BOSS and EduBOSS?",
+        "difference between versions of boss",
+        "boss and eduboss difference",
+	"os boss vs eduboss"
+      ],
+      "responses": [
+        "BOSS is for generic desktop users and EduBOSS is designed and developed for Schools."
+      ]
+    },
+    {
+      "tag": "install",
+      "patterns": [
+        "How to install BOSS?",
+        "boss install",
+        "install boss"
+      ],
+      "responses": [
+        "Refer http://downloads.bosslinux.in/usermanual/BOSS_Anoop_Updated_Installation_Manual.pdf"
+      ]
+    },
+    {
+      "tag": "differencewindowsboss",
+      "patterns": [
+        "What is the difference between windows and BOSS?",
+        "difference between windows and boss",
+        "difference between the os",
+        "what is differenct in boss"
+      ],
+      "responses": [
+        "Windows is a closed-source operating system and BOSS is an open source linux based operating system."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact BOSS Support Centre?",
+        "support boss",
+        "boss support center",
+        "more doubts"
+      ],
+      "responses": [
+        "Toll-Free Number:\n 1800 4250 455"
+      ]
+    },
+    {
+      "tag": "32bit",
+      "patterns": [
+        "I want 32 bit boss os iso file, so how can i download.",
+        "download 32 bit boss",
+        "download 32 bit",
+        "boss 32 bit",
+        "32 bit boss"
+      ],
+      "responses": [
+        "Download from https://ask.otc.nic.in/downloads/os/BOSS_downloads/boss-6.1-i386-DVD-19082015.iso"
+      ]
+    },
+    {
+      "tag": "findversion",
+      "patterns": [
+        "How to find the version of BOSS installed in my PC?",
+        "version of boss installed",
+        "find version of boss"
+      ],
+      "responses": [
+        "Check Applications -> System Tools -> Settings -> Details -> Overview or run the following command in terminal, “lsb_release -a”."
+      ]
+    },
+   {
+      "tag": "language",
+      "patterns": [
+        "how many language boss os support?",
+        "indian language",
+        "localization of boss os",
+	"boss unique feature",
+	"why boss",
+	"language support"
+      ],
+      "responses": [
+        "BOSS support almost all indian language",
+	"supports 19 indian languages ",
+	"it's citizen based OS, supports 19 indian languages."
+      ]
+    }
+  ]
+}
+      

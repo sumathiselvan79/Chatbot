@@ -1,0 +1,221 @@
+<style>
+.bubble1
+{
+  position: relative;
+  width: 160px;
+  height: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  display: block;
+  background: #D8E4E3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+float: right;
+}
+
+.bubble1:after
+{
+  content: '';
+position: absolute;
+border-style: solid;
+border-width: 26px 37px 26px 0;
+border-color: transparent #D8E4E3;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -26px;
+left: -10px;
+top: 50%;
+
+float:right !important;
+}
+.text1{
+padding:10px;
+padding-bottom: 10px:
+font-family: monospace;
+font-weight: 400;
+color:black;
+
+}
+
+
+
+
+.bubble
+{
+position: relative;
+width: 160px;
+height: auto;
+padding: 0px;
+box-sizing: border-box;
+display: block;
+background: black;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 0 15px 15px;
+border-color: transparent black;
+display: block;
+width: 0;
+height:auto;
+z-index: 1;
+right: -10px;
+top: 10px;
+}
+.text{
+padding:10px;
+font-family: monospace;
+font-weight: 400;
+color:white;
+}
+/* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: black;
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+} */
+/* body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ } */
+ main{
+
+ }
+ /* footer{
+   position: fixed !important;
+ } */
+.foo{
+position: fixed!important;
+  color:white;
+  padding-bottom: 0px !important;
+  padding-top:50px;
+
+}
+button{
+  padding-bottom: 34em:
+  color:black;
+}
+.brand-logo{
+  padding: 4em;
+}
+
+</style>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <title>The Materialize Example</title>
+     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+     <link rel = "stylesheet"
+        href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel = "stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+     <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js">
+     </script>
+     <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+     </script></head>
+     <body>
+     <nav class="black">
+          <a href="#" class="brand-logo">BossBot</a>
+   <div class="nav-wrapper">
+
+     <form>
+
+
+
+
+     </form>
+   </div>
+ </nav>
+
+<div id="chat"></div>
+
+
+  <main>
+    <footer class="page-footer footer-fixed black style="position:fixed"  ">
+
+        <!-- <div class="input">
+       <input id="search" type="search" placeholder="   type a Message..." required>
+       <span>
+         <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+             <i class="material-icons right" style="float: right;">send</i>
+           </button>
+       </span>
+        </div> -->
+        <div class="row">
+
+
+
+                <div class="row">
+                    <div class="input-field col s6 offset-s1">
+
+                        <input style="color:white" id="name" type="text" class="validate" placeholder="Enter a Messege...">
+                        <label for="name">Messege</label>
+                    </div>
+
+                    <div class="input-field col s3 offset-s1">
+                      <button class="btn waves-effect waves-light white" style="color:black" type="submit" name="action">
+                          <i class="material-icons right" style="float: right;">send</i>
+                        </button>
+                    </div>
+                </div>
+
+
+        </div>
+
+        </footer>
+      
+
+
+</body>
+</html>
+<script>
+$(document).ready(function(){
+
+    $("button").click(function(){
+      event.preventDefault();
+      console.log("clicked")
+     var clientMessege=document.getElementById("name").value;
+     var encodedMessege=encodeURI(clientMessege)
+     var url="http://127.0.0.1:3126/?query="+encodedMessege+"&id=1"
+     console.log(url)
+       $.ajax({url: url, success: function(result){
+           //$("#div1").html(result);
+           resultString=JSON.parse(result)
+
+           console.log(resultString)
+var bub=""
+bub=bub+'  <br><div class="bubble1 text1"><center>'+clientMessege+'</center></div><br><br><br> <div class="bubble text"><center>'+resultString.reply+'</center></div> '
+$("#chat").append(bub)
+         }
+    });
+}
+);
+})
+</script>
